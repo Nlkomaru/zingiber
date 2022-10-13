@@ -40,7 +40,7 @@ async fn scraiping() -> Result<(), Box<dyn Error>> {
 
     // name
     tab.wait_for_element("div.__question__:nth-child(5) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)")?.click()?;
-    tab.type_str("長瀬 柊葉")?;
+    tab.type_str("Your Name")?;
     println!("name typed");
 
     // temprerature
